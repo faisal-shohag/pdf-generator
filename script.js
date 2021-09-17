@@ -121,7 +121,7 @@ Choose your favorite color:
   <div class="auni">Begum Rokeya University, Rangpur</div>
       <div class="atitle1">Department of<br><span class="deptName d1"> Computer Science & Engineering</span></div>
     <div class="assignment_name">Electronic Theory of Valency and Chemical Bonding & something other that can over flow this div.</div>
-    <div class="act">Course: <span class="acode">MAT2127</span><br>Title: <span class="atitle">Matrices & Diffrential Equation</span></div>
+    <div class="act">Course Code: <span class="acode">MAT2127</span><br>Course Title: <span class="atitle">Matrices & Diffrential Equation</span></div>
     <div class="table">
     <table border="0">
     <tr>
@@ -132,13 +132,13 @@ Choose your favorite color:
     <div class="a"><div class="at">Year:</div><div class="ayear aa">2nd</div></div>
     <div class="a"><div class="at">Semester:</div><div class="asemester aa">1st</div></div>
     <div class="a"><div class="at">Session:</div><div class="Session aa">2018-2019</div></div>
-    <div class="dof">Department of <span class="deptName">Computer Sicence & Engineering</span>,<br>Begum Rokeya University Rangpur</div>
+    <div class="dof">Department of <span class="deptName">Computer Sicence & Engineering</span>,<br>Begum Rokeya University, Rangpur</div>
     </td>
     <td class="atd1">
     <div class="box-title sto">Submitted To</div>
     <div class="tname">AKM Kazi Sazzad Hussain</div>
     <div class="rank">Assistant professor</div>
-    <div class="dof">Department of <span class="tdept">Mathematics</span>,<br>Begum Rokeya University Rangpur</div>
+    <div class="dof">Department of <span class="tdept">Mathematics</span>,<br>Begum Rokeya University, Rangpur</div>
        <option value="Instructor">Instructor</option>
        </td>
     </tr>
@@ -175,7 +175,7 @@ Choose your favorite color:
                 $('.abody').show();
                 const sheet = document.querySelector('.assignment');
             html2pdf(sheet, {
-                filename: 'myfile.pdf',
+                filename: 'Assignmet_cover_page.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: quality },
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
@@ -413,7 +413,7 @@ $('#colorpicker').on('input', function() {
             setTimeout(function(){
                 $('.sbody').show();
             html2pdf(sheet, {
-                filename: 'myfile.pdf',
+                filename: 'Exam_cover_page.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: quality},
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
