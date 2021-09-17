@@ -235,7 +235,7 @@
     font-family: Hind Siliguri;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    margin: 20px;
+    margin: 5px;
     border-radius: 5px;
   }
   
@@ -243,7 +243,7 @@
     font-family: Hind Siliguri;
   }
   .head {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
     padding: 10px;
@@ -390,7 +390,7 @@
 
 .top_title{
  font-weight: bold;
- font-size: 40px;
+ font-size: 30px;
 
 }
 
