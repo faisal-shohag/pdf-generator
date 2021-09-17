@@ -73,6 +73,18 @@ router.on({
 <label for="tname">Teacher name</label>
 </div>
 
+<div class="input-field col s12">
+   <select name="trank" required>
+       <option value="" disabled selected>Select Teacher's Rank</option>
+       <option value="Professor">Professor</option>
+       <option value="Associate Professor">Associate Professor</option>
+       <option value="Assistant Professor">Assistant Professor</option>
+       <option value="Lecturer">Lecturer</option>
+       <option value="Instructor">Instructor</option>
+       <option value="Head of Department">Head of Department</option>
+   </select>
+</div>
+
 
 <div class="input-field">
 <input type="text" name="tdept" required>
@@ -125,10 +137,10 @@ Choose your favorite color:
     <td class="atd1">
     <div class="box-title sto">Submitted To</div>
     <div class="tname">AKM Kazi Sazzad Hussain</div>
-    <di
-     class="rank">Assistant professor.</div>
+    <div class="rank">Assistant professor</div>
     <div class="dof">Department of <span class="tdept">Mathematics</span>,<br>Begum Rokeya University Rangpur</div>
-    </td>
+       <option value="Instructor">Instructor</option>
+       </td>
     </tr>
     </table>
     <div class="subdate">Submission Date: 20/12/2021</div>
@@ -154,6 +166,7 @@ Choose your favorite color:
       $('.asemester').text(assignment.semester.value);
       $('.Session').text(assignment.session.value);
       $('.tname').text(assignment.tname.value);
+      $('.rank').text(assignment.trank.value + ".");
       $('.tdept').text(assignment.tdept.value);
       $('.subdate').text('Submission Date: ' + assignment.date.value)
      let quality = parseInt(assignment.quality.value);
