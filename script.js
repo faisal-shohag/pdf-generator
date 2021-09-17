@@ -175,7 +175,7 @@ Choose your favorite color:
     $('select').formSelect();
 });
 $(document).ready(function () {
-    $('.datepicker').datepicker({ format: 'dd/mm/yyyy', selectMonts: true, selectYear: 5 });
+    $('.datepicker').datepicker({ format: 'dd/mm/yyyy', selectMonths: true, selectYear: 5 });
 });
 
 $('#colorpicker').on('input', function() {
@@ -410,7 +410,7 @@ $('#colorpicker').on('input', function() {
             $('select').formSelect();
         });
         $(document).ready(function () {
-            $('.datepicker').datepicker({ format: 'dd/mm/yyyy', selectMonts: true, selectYear: 5 });
+            $('.datepicker').datepicker({ format: 'dd/mm/yyyy', selectMonths: true, selectYear: 5 });
         });
  }
 }).resolve();
