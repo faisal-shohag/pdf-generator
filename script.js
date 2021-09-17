@@ -201,7 +201,7 @@ $('#colorpicker').on('input', function() {
   app.innerHTML = `
   <form id="myform">
   <div class="head"><i class="icofont-clip-board"></i> Exam Coverpage</div>
-  <center><small style="color: red;"><u><b>NB:</b></u> This exam cover page is not varified or granted by University. Please take permission from your teacher before using it.</small></center>
+  <center><small style="color: red;"><u><b>NB:</b></u> This exam cover page is not varified or granted by University yet. Please take permission from your teacher before using it.</small></center>
   <div class="input-field">
       <input type="text" name="name" required />
       <label for="name">Name of the Exam</label>
