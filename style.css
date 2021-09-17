@@ -411,8 +411,13 @@ a{
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   padding: 10px;
   align-items: center;
-  
+  flex-direction: row;
+  gap: 10px;
 
+}
+.avail > div {
+  flex: 1 1 auto;
+  margin: 20px;
 }
 
 .cov-e{
@@ -420,7 +425,6 @@ a{
   padding: 10px;
   max-width: 200px;
   height: 130px;
-  margin-left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -432,7 +436,6 @@ a{
 .cov-a{
   height: 130px;
   max-width: 200px;
-  margin-right: 20px;
   display: flex;
   padding: 10px;
   justify-content: center;
