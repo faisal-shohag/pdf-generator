@@ -82,7 +82,7 @@
   
   #sheet .sbody {
     width: 85%;
-    /* display: none; */
+    display: none;
   }
   .flex1 {
     display: flex;
