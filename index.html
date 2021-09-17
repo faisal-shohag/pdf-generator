@@ -211,6 +211,7 @@
     <script>
         const form = document.querySelector("#myform");
         form.addEventListener('submit', e => {
+            $('.loader').show();
             e.preventDefault();
             let y = (((new Date()).getFullYear()).toString());
             $('.name').text(form.name.value);
@@ -225,7 +226,6 @@
             $('.title').text(form.title.value);
             $('.date').text(form.date.value);
             $(".t3").text(form.page.value);
-            $('.loader').show();
             const sheet = document.getElementById('sheet');
             html2pdf(sheet, {
                 filename: 'myfile.pdf',
