@@ -94,7 +94,7 @@
                 Page</button></center>
     </form>
 
-
+    <h4 style="text-align: center; font-weight: bold; font-family: Hind Siliguri;"><u>Demo</u></h4>
     <div id="sheet">
         <div class="sbody">
             <div class="uni">BEGUM ROKEYA UNIVERSITY, RANGPUR</div>
@@ -227,13 +227,16 @@
             $('.date').text(form.date.value);
             $(".t3").text(form.page.value);
             const sheet = document.getElementById('sheet');
+
+            setTimeout(function(){ $('.loader').hide();}, 5000);
+            setTimeout(function(){
             html2pdf(sheet, {
                 filename: 'myfile.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: 1.2 },
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-            });
-            $('.loader').hide();
+            })}, 5000);
+           
         });
         $(document).ready(function () {
             $('select').formSelect();
