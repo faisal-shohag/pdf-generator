@@ -179,8 +179,11 @@ Choose your favorite color:
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: quality },
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-            })}, 5000);
+                
+            })
             $('.abody').hide();
+        }, 5000);
+            
   })
 
 
@@ -412,13 +415,16 @@ $('#colorpicker').on('input', function() {
             setTimeout(function(){ $('.loader').hide();}, 5000);
             setTimeout(function(){
                 $('.sbody').show();
+                
             html2pdf(sheet, {
                 filename: 'Exam_cover_page.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: { scale: quality},
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-            })}, 5000);
+            })
             $('.sbody').hide();
+        }, 5000);
+            
         });
         $(document).ready(function () {
             $('select').formSelect();
