@@ -1,18 +1,36 @@
 var router  = new Navigo(null, true, '#!');
 const app = document.querySelector("#app");
+var acount = 0, ecount = 0;
+db.ref('coverPage/dcount').on('value', snap=>{
+    acount = snap.val().assignment.count;
+    ecount = snap.val().exam.count;
+});
 router.on({
  "/": function(){
+  
      app.innerHTML = `
      <div class="home">
      <div class="top_title">
-     BRUR Cover Page Generator</div>
+         BRUR Cover Page Generator</div>
      <div class="avail">
-     <a href="#!/asignment"><div class="cov-a"><div><i class="icofont-ebook"></i><br> Asignment Cover Page</div></div></a>
-     <a href="#!/exam"><div class="cov-e"><div><i class="icofont-clip-board"></i><br>Exam Cover Page</div></div></a>
-     </div>
+     <center><div class="home-loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></center>
      </div>
      </div>
      `
+
+     db.ref('coverPage/dcount').on('value', snap=>{
+        document.querySelector('.avail').innerHTML = `
+         <a href="#!/asignment"><div class="cov-a">
+         <div class="downCount"><i class="icofont-bubble-down"></i> Downloaded <span class="count dca">${snap.val().assignment.count}</span> times</div>
+         <div><i class="icofont-ebook"></i><br> Asignment Cover Page</div></div></a>
+         <a href="#!/exam"><div class="cov-e">
+         <div class="downCount"><i class="icofont-bubble-down"></i> Downloaded <span class="count dce">${snap.val().exam.count}</span> times</div>
+         <div><i class="icofont-clip-board"></i><br>Exam Cover Page</div></div></a>
+         </div>
+        `
+})
+
+
  },
  "/asignment": function(){
   app.innerHTML=`
@@ -182,6 +200,7 @@ Choose your favorite color:
                 
             })
             $('.abody').hide();
+            db.ref('coverPage/dcount/assignment').update({count: acount+1});
         }, 5000);
             
   })
@@ -433,6 +452,7 @@ $('#colorpicker').on('input', function() {
                 jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
             })
             $('.sbody').hide();
+            db.ref('coverPage/dcount/exam').update({count: ecount+1});
         }, 5000);
             
         });

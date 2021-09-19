@@ -34,7 +34,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/navigo/7.1.3/navigo.min.js" integrity="sha512-T5Jaw8KOeloIRJz6TfFWDNqeTwMnLTXf2amscWwmNmIPmrAjPdl47fupdu7TrX3eSVuS1NElEfw0h2+0SsNxaQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+  apiKey: "AIzaSyAYPF_k6MBimdXEkR5tfHo-AaDiYK2wjRU",
+  authDomain: "project-advance.firebaseapp.com",
+  databaseURL: "https://project-advance.firebaseio.com",
+  projectId: "project-advance",
+  storageBucket: "project-advance.appspot.com",
+  messagingSenderId: "986793570142",
+  appId: "1:986793570142:web:1a41e03d01d4094188e9cf",
+  measurementId: "G-862SKPSKXE"
+};
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var db = firebase.database();
+    </script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
