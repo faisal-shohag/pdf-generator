@@ -146,9 +146,9 @@ Choose your favorite color:
     <div class="subdate">Submission Date: 20/12/2021</div>
     </div>
   </div>
+
   </div>
   `
-  const sheet = document.querySelector('.assignment');
   const assignment = document.querySelector('#assignment_form');
 
   assignment.addEventListener('submit', e=>{
@@ -262,10 +262,20 @@ $('#colorpicker').on('input', function() {
       <label for="date">Date</label>
   </div>
 
-  <div class="input-field">
-      <input type="number" name="page" />
-      <label for="page">Number of pages</label>
-  </div>
+  <div class="input-field col s12">
+   <select name="eyear" required>
+       <option value="" disabled selected>Select Exam Year</option>
+       <option value="17">2017</option>
+       <option value="18">2018</option>
+       <option value="19">2019</option>
+       <option value="20">2020</option>
+       <option value="21">2021</option>
+       <option value="22">2022</option>
+       <option value="23">2023</option>
+       <option value="24">2024</option>
+       <option value="25">2025</option>
+   </select>
+</div>
 
   <div class="input-field col s12">
    <select name="quality" required>
@@ -293,7 +303,7 @@ $('#colorpicker').on('input', function() {
                   </tr>
                   <tr>
                       <td class="t2">Number of pages</td>
-                      <td class="t3">10</td>
+                      <td class="t3"></td>
                   </tr>
               </table>
           </div>
@@ -397,9 +407,9 @@ $('#colorpicker').on('input', function() {
         form.addEventListener('submit', e => {
             $('.loader').show();
             e.preventDefault();
-            let y = (((new Date()).getFullYear()).toString());
+            // let y = (((new Date()).getFullYear()).toString());
             $('.name').text(form.name.value);
-            $('.nyear').text(y[2] + y[3]);
+            // $('.nyear').text(y[2] + y[3]);
             $('.dept').text(form.dept.value);
             $('.year').text(form.year.value);
             $('.semester').text(form.semester.value);
@@ -409,7 +419,7 @@ $('#colorpicker').on('input', function() {
             $('.code').text(form.code.value);
             $('.title').text(form.title.value);
             $('.date').text(form.date.value);
-            $(".t3").text(form.page.value);
+            $(".nyear").text(form.eyear.value);
             const sheet = document.getElementById('sheet');
             let quality = parseInt(form.quality.value);
             setTimeout(function(){ $('.loader').hide();}, 5000);
