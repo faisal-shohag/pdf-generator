@@ -22,7 +22,7 @@ router.on({
         document.querySelector('.avail').innerHTML = `
          <a href="#!/asignment"><div class="cov-a">
          <div class="downCount"><i class="icofont-bubble-down"></i> Downloaded <span class="count dca">${snap.val().assignment.count}</span> times</div>
-         <div><i class="icofont-ebook"></i><br> Asignment Cover Page</div></div></a>
+         <div><i class="icofont-ebook"></i><br> Assignment Cover Page</div></div></a>
          <a href="#!/exam"><div class="cov-e">
          <div class="downCount"><i class="icofont-bubble-down"></i> Downloaded <span class="count dce">${snap.val().exam.count}</span> times</div>
          <div><i class="icofont-clip-board"></i><br>Exam Cover Page</div></div></a>
