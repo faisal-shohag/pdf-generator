@@ -1,3 +1,7 @@
+body{
+  font-family: Hind Siliguri;
+}
+
 .lds-dual-ring {
     display: inline-block;
     width: 80px;
@@ -385,14 +389,47 @@
 .home{
   text-align: center;
   padding: 20px;
-  font-family: Hind Siliguri;
+  /* z-index: -1; */
 }
+
+.tt{background: #d8d4d4;}
 
 .top_title{
  font-weight: bold;
  font-size: 30px;
-
+ /* background-color: #fff; */
+ background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+ /* -webkit-background-clip: text; */
+ /* -webkit-text-fill-color: transparent; */
+ box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+margin-bottom: 20px;
+padding: 5px;
+text-align: center;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 99;
+color: #fff;
 }
+
+
+
+
+main{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#app{
+  min-width: 60%;
+}
+
+
+
 
 a{
   color: #000;
@@ -408,13 +445,41 @@ a{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   padding: 10px;
   align-items: center;
   flex-direction: row;
   gap: 10px;
+  border-radius: 10px;
 
 }
+h2{
+  background: -webkit-linear-gradient(45deg, rgb(97, 22, 216), rgb(197, 53, 137));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+@media (max-width: 660px) {
+  h2{
+    font-size: 25px;
+  }
+
+  .top_title{
+    font-size: 23px;
+  }
+
+  main{
+    display: block;
+  }
+
+  #app{
+    width: 100%;
+  }
+}
+
 .avail > div {
   flex: 1 1 auto;
   margin: 20px;

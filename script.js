@@ -10,11 +10,10 @@ router.on({
   
      app.innerHTML = `
      <div class="home">
-     <div class="top_title">
-         BRUR Cover Page Generator</div>
      <div class="avail">
      <center><div class="home-loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></center>
      </div>
+     <h2>New Layouts for Assignment are coming soon!</h2>
      </div>
      `
 
@@ -35,7 +34,9 @@ router.on({
  "/asignment": function(){
   app.innerHTML=`
   <form id="assignment_form">
-  <div class="head"><i class="icofont-ebook"></i> Assignment Coverpage<head/div>
+  <div class="head"><i class="icofont-ebook"></i> Assignment Coverpage</head></div>
+  <div class="f-flex">
+<div class="f1">
   <div class="input-field">
  <input type="text" name="name" required/> 
  <label for="name">Your Name</label>
@@ -75,6 +76,10 @@ router.on({
 <input type="text" name="session" required/>
 <label for="session">Session</label>
 </div>
+
+</div>
+
+<div class="f2">
 
 <div class="input-field">
 <input type="text" name="code" required/>
@@ -126,6 +131,9 @@ Choose your favorite color:
        <option value="5">Medium(>800KB)</option>
        <option value="10">High(>2MB)</option>
    </select>
+</div>
+
+</div>
 </div>
 
 <center><button type="submit" class="btn red"><i class="icofont-file-pdf"></i> Generate Coverpage</button></center>
