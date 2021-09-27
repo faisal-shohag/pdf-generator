@@ -412,7 +412,11 @@ z-index: 99;
 color: #fff;
 }
 
-
+.back_icon{
+  position: absolute;
+  font-size: 50px;
+  z-index: 99999;
+}
 
 
 main{
@@ -478,6 +482,11 @@ h2{
   #app{
     width: 100%;
   }
+
+  .back_icon{
+    font-size: 35px;
+  }
+
 }
 
 .avail > div {

@@ -7,7 +7,7 @@ db.ref('coverPage/dcount').on('value', snap=>{
 });
 router.on({
  "/": function(){
-  
+    $('.top_title').html(`<div class="animate__animated animate__fadeIn">BRUR Cover Page Generator</div>`);
      app.innerHTML = `
      <div class="home">
      <div class="avail">
@@ -34,7 +34,7 @@ router.on({
  "/asignment": function(){
   app.innerHTML=`
   <form id="assignment_form">
-  <div class="head"><i class="icofont-ebook"></i> Assignment Coverpage</head></div>
+  <div class="head animate__animated animate__fadeOutUp"><i class="icofont-ebook"></i> Assignment Coverpage</head></div>
   <div class="f-flex">
 <div class="f1">
   <div class="input-field">
@@ -175,8 +175,9 @@ Choose your favorite color:
 
   </div>
   `
+  $('.top_title').html(`<div onclick="window.history.back()" class="back back_icon animate__animated animate__fadeInRight"><i class="icofont-swoosh-left"></i></div> <div class="animate__animated animate__fadeInDown"><i class="icofont-ebook"></i> Assignment Coverpage</div>`);
+  
   const assignment = document.querySelector('#assignment_form');
-
   assignment.addEventListener('submit', e=>{
       $('.loader').show();
       e.preventDefault();
@@ -230,7 +231,7 @@ $('#colorpicker').on('input', function() {
  "/exam": function(){
   app.innerHTML = `
   <form id="myform">
-  <div class="head"><i class="icofont-clip-board"></i> Exam Coverpage</div>
+  <div class="head animate__animated animate__fadeOutUp"><i class="icofont-clip-board"></i> Exam Coverpage</div>
   <center><small style="color: green;"><u><b>NB:</b></u> This website won't be responsible for any misuse. </small></center>
   <div class="input-field">
       <input type="text" name="name" required />
@@ -431,6 +432,7 @@ $('#colorpicker').on('input', function() {
   </div>
 </div>
   `
+  $('.top_title').html(`<div onclick="window.history.back()" class="back back_icon animate__animated animate__fadeInRight"><i class="icofont-swoosh-left"></i></div> <div class="animate__animated animate__fadeInDown"><i class="icofont-clip-board"></i> Exam Coverpage</div>`);
   const form = document.querySelector("#myform");
         form.addEventListener('submit', e => {
             $('.loader').show();
@@ -473,3 +475,4 @@ $('#colorpicker').on('input', function() {
         });
  }
 }).resolve();
+
