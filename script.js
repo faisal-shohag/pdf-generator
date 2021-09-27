@@ -13,7 +13,7 @@ router.on({
      <div class="avail">
      <center><div class="home-loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></center>
      </div>
-     <h2>New Layouts for Assignment are coming soon!</h2>
+     <h2 class="animate__animated animate__fadeIn"><i class="icofont-dotted-right"></i>New Layouts for Assignment are coming soon!</h2>
      </div>
      `
 
