@@ -232,7 +232,7 @@ $('#colorpicker').on('input', function() {
   app.innerHTML = `
   <form id="myform">
   <div class="head animate__animated animate__fadeOutUp"><i class="icofont-clip-board"></i> Exam Coverpage</div>
-  <center><small style="color: green;"><u><b>NB:</b></u> This website won't be responsible for any misuse. </small></center>
+  <center><small style="color: green;"><b><i class="icofont-check-circled"></i> Varified</b>  </small></center>
   <div class="input-field">
       <input type="text" name="name" required />
       <label for="name">Name of the Exam</label>
