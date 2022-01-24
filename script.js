@@ -10,6 +10,10 @@ router.on({
     $('.top_title').html(`<div class="animate__animated animate__fadeIn">BRUR Cover Page Generator</div>`);
      app.innerHTML = `
      <div class="home">
+     <div class="update">
+     <div><i class="icofont-checked"></i> Blank Exam Coverpage is now avilable</div>
+     <div><i class="icofont-checked"></i> Exam title field width reduced </div>
+     </div>
      <div class="avail">
      <center><div class="home-loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></center>
      </div>
@@ -19,6 +23,7 @@ router.on({
 
      db.ref('coverPage/dcount').on('value', snap=>{
         document.querySelector('.avail').innerHTML = `
+        
          <a href="#!/asignment"><div class="cov-a">
          <div class="downCount"><i class="icofont-bubble-down"></i> Downloaded <span class="count dca">${snap.val().assignment.count}</span> times</div>
          <div><i class="icofont-ebook"></i><br> Assignment Cover Page</div></div></a>

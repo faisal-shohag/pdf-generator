@@ -650,3 +650,13 @@ input{
     transform: rotate(360deg);
   }
 }
+
+.update{
+  color: green;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
