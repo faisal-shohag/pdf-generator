@@ -11,7 +11,7 @@ router.on({
      app.innerHTML = `
      <div class="home">
      <div class="update">
-     <div><i class="icofont-checked"></i> Blank Exam Coverpage is now avilable</div>
+     <div><i class="icofont-checked"></i> Blank Exam Coverpage is now available</div>
      <div><i class="icofont-checked"></i> Course title field width has been increased </div>
      </div>
      <div class="avail">
