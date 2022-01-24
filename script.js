@@ -12,7 +12,7 @@ router.on({
      <div class="home">
      <div class="update">
      <div><i class="icofont-checked"></i> Blank Exam Coverpage is now avilable</div>
-     <div><i class="icofont-checked"></i> Exam title field width reduced </div>
+     <div><i class="icofont-checked"></i> Course title field width reduced </div>
      </div>
      <div class="avail">
      <center><div class="home-loader"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></center>
