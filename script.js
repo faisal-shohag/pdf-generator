@@ -234,16 +234,16 @@ $('#colorpicker').on('input', function() {
   <div class="head animate__animated animate__fadeOutUp"><i class="icofont-clip-board"></i> Exam Coverpage</div>
   <center><small style="color: green;"><b><i class="icofont-check-circled"></i> Verified</b>  </small></center>
   <div class="input-field">
-      <input type="text" name="name" required />
+      <input type="text" name="name"  />
       <label for="name">Name of the Exam</label>
   </div>
 
   <div class="input-field">
-      <input type="text" name="dept" required />
+      <input type="text" name="dept"  />
       <label for="name">Department</label>
   </div>
   <div class="input-field col s12">
-      <select name="year" required>
+      <select name="year" >
           <option value="" disabled selected>Select Year</option>
           <option value="1st">1st</option>
           <option value="2nd">2nd</option>
@@ -253,7 +253,7 @@ $('#colorpicker').on('input', function() {
   </div>
 
   <div class="input-field col s12">
-      <select name="semester" required>
+      <select name="semester" >
           <option value="" disabled selected>Select Semester</option>
           <option value="1st">1st</option>
           <option value="2nd">2nd</option>
@@ -261,7 +261,7 @@ $('#colorpicker').on('input', function() {
   </div>
 
   <div class="input-field">
-      <input type="text" name="id" required />
+      <input type="text" name="id"  />
       <label for="id">ID No.</label>
   </div>
 
@@ -291,7 +291,7 @@ $('#colorpicker').on('input', function() {
   </div>
 
   <div class="input-field col s12">
-   <select name="eyear" required>
+   <select name="eyear" >
        <option value="" disabled selected>Select Exam Year</option>
        <option value="17">2017</option>
        <option value="18">2018</option>
@@ -307,8 +307,8 @@ $('#colorpicker').on('input', function() {
 
 
   <div class="input-field col s12">
-   <select name="quality" required>
-       <option value="" disabled selected>Select Pdf Quality</option>
+   <select name="quality" >
+       <option value="5" disabled selected>Select Pdf Quality(Default 800+KB)</option>
        <option value="2">Default(>300KB)</option>
        <option value="5">Medium(>800KB)</option>
        <option value="10">High(>2MB)</option>
@@ -350,7 +350,7 @@ $('#colorpicker').on('input', function() {
           <div class="r">
               <div class="r">
                   <div class="s1">Name of the Exam:</div>
-                  <div class="name dot">1st Year 2nd Semester Final Examination</div>
+                  <div class="name dot"></div>
               </div>
               <div class="r">
                   <div class="s2">20</div>
@@ -361,16 +361,16 @@ $('#colorpicker').on('input', function() {
           <div class="r">
               <div class="r">
                   <div class="s3">Department:</div>
-                  <div class="dept dot">Computer Science & Engineering</div>
+                  <div class="dept dot"></div>
               </div>
               <div class="r">
                   <div class="s4">Year:</div>
-                  <div class="year dot">1st</div>
+                  <div class="year dot"></div>
               </div>
 
               <div class="r">
                   <div class="s5">Semester:</div>
-                  <div class="semester dot">1st</div>
+                  <div class="semester dot"></div>
               </div>
           </div>
 
@@ -378,17 +378,17 @@ $('#colorpicker').on('input', function() {
           <div class="r">
               <div class="r">
                   <div class="s6">ID No:</div>
-                  <div class="id dot">1805027</div>
+                  <div class="id dot"></div>
               </div>
 
               <div class="r">
                   <div class="s7">Registration No:</div>
-                  <div class="reg dot">0000011376</div>
+                  <div class="reg dot"></div>
               </div>
 
               <div class="r">
                   <div class="s8">Session:</div>
-                  <div class="session dot">2018-2019</div>
+                  <div class="session dot"></div>
               </div>
 
           </div>
@@ -396,19 +396,19 @@ $('#colorpicker').on('input', function() {
           <div class="r">
               <div class="r">
                   <div class="s9">Course code:</div>
-                  <div class="code dot">CSE-12432</div>
+                  <div class="code dot"></div>
               </div>
 
               <div class="r">
                   <div class="10">Course Title:</div>
-                  <div class="title dot">Computer Fundamentals</div>
+                  <div class="title dot"></div>
               </div>
           </div>
 
           <div class="r">
               <div class="r">
                   <div class="11">Date:</div>
-                  <div class="date dot">20/12/2021</div>
+                  <div class="date dot"></div>
               </div>
           </div>
       </div>
