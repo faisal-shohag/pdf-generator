@@ -453,6 +453,9 @@ $('#colorpicker').on('input', function() {
             $('.session').text(form.session.value);
             $('.code').text(form.code.value);
             $('.title').text(form.title.value);
+            if((form.title.value).length > 15){
+                $('.title').css('font-size', '14px');
+            }
             $('.date').text(form.date.value);
             $(".nyear").text(form.eyear.value);
             const sheet = document.getElementById('sheet');
